@@ -2,6 +2,7 @@ package org.example.stockBroker;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
@@ -9,10 +10,10 @@ class Client{
     private String id;
     private String name;
     private double capital;
-    private Map<String, Stack<Transaction>> buyTransactions;
-    private Map<String, Integer> holdings;
+    private Map<String, Stack<Transaction>> buyTransactions = new HashMap<String, Stack<Transaction>>();
+    private Map<String, Integer> holdings = new HashMap<String , Integer>();
 
-    public Client(String name, String id, int capital) {
+    public Client(String id, String name, int capital) {
         this.name = name;
         this.id = id;
         this.capital = capital;

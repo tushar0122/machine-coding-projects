@@ -5,7 +5,7 @@ class Stock{
     private String name;
     private double price;
 
-    public Stock(String id, double price, String name) {
+    public Stock(String id, String name, double price) {
         this.id = id;
         this.price = price;
         this.name = name;

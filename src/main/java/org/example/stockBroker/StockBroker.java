@@ -7,11 +7,25 @@ class StockBroker {
     Map<String, Client> clientData = new HashMap<String, Client>();
     Map<String, Stock> stockData = new HashMap<String, Stock>();
 
-    public void createClient(Client client) {
+    private static StockBroker stockBroker;
+
+    private StockBroker() {
+    }
+
+    public static StockBroker getInstance(){
+        if(stockBroker == null){
+            stockBroker = new StockBroker();
+        }
+        return stockBroker;
+    }
+
+    public void createClient(String clientId, String clientName, int capital) {
+        Client client = new Client(clientId, clientName, capital);
         clientData.put(client.getId(), client);
     }
 
-    public void createStock(Stock stock) {
+    public void createStock(String stockId, String name, double price) {
+        Stock stock = new Stock(stockId, name, price);
         stockData.put(stock.getId(), stock);
     }
 
@@ -31,16 +45,16 @@ class StockBroker {
         }
     }
 
-    public void printClientHolding(String clientId){
+    public void printClientHoldings(String clientId){
         var holdings = clientData.get(clientId).getHoldings();
         for(var holding: holdings.entrySet()){
             System.out.println("Stock: "+holding.getKey()+" Quantity: "+holding.getValue());
         }
     }
 
-    public void printAllClientHolding(){
+    public void printAllClientHoldings(){
         for(var clientId: clientData.keySet()){
-            printClientHolding(clientId);
+            printClientHoldings(clientId);
         }
     }
 
