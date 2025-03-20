@@ -1,11 +1,14 @@
-package org.example.stockBroker;
+package org.example.stockBroker.entities;
 
-import java.util.HashMap;
+import org.example.stockBroker.entities.Stock;
+import org.example.stockBroker.constants.OrderType;
+
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
-class StockBroker {
-    Map<String, Client> clientData = new HashMap<String, Client>();
-    Map<String, Stock> stockData = new HashMap<String, Stock>();
+public  class StockBroker {
+    Map<String, Client> clientData = new ConcurrentHashMap<String, Client>();
+    Map<String, Stock> stockData = new ConcurrentHashMap<String, Stock>();
 
     private static StockBroker stockBroker;
 

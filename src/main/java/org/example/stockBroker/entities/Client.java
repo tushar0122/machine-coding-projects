@@ -1,4 +1,6 @@
-package org.example.stockBroker;
+package org.example.stockBroker.entities;
+
+import org.example.stockBroker.entities.Transaction;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
