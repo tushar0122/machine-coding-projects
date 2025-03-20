@@ -6,26 +6,18 @@ import org.example.stockBroker.services.transactionProcessor.TransactionProcesso
 public class TransactionManager {
 
     private static TransactionManager transactionManager;
-    private ClientManager clientManager;
-    private StockManager stockManager;
 
-    private TransactionManager(ClientManager clientManager, StockManager stockManager) {
-        this.clientManager = clientManager;
-        this.stockManager = stockManager;
+    private TransactionManager() {
     }
 
     public static TransactionManager getInstance(){
         if(transactionManager == null){
-            var clientManager = ClientManager.getInstance();
-            var stockManager = StockManager.getInstance();
-            transactionManager = new TransactionManager(clientManager, stockManager);
+            transactionManager = new TransactionManager();
         }
         return transactionManager;
     }
 
     public void processTransaction(OrderType orderType, String clientId, String stockId, int quantity) throws Exception {
-        var client = clientManager.getClient(clientId);
-        var stockPrice = stockManager.getStock(stockId).getPrice();
         var transactionProcessor = TransactionProcessorFactory.getInstance(orderType);
         transactionProcessor.processTransaction(clientId, stockId, quantity);
     }
