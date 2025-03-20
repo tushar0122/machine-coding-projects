@@ -1,6 +1,6 @@
 package org.example.stockBroker.entities;
 
-class Stock{
+public class Stock{
     private String id;
     private String name;
     private double price;

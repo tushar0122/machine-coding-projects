@@ -1,4 +1,4 @@
-package org.example.stockBroker.taxCalculator;
+package org.example.stockBroker.services.taxCalculator;
 
 public class InterDaySellTaxCalculator implements TaxCalculator {
     @Override

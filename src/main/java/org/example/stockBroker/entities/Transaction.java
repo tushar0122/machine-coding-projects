@@ -2,7 +2,7 @@ package org.example.stockBroker.entities;
 
 import java.time.LocalDateTime;
 
-class Transaction{
+public class Transaction{
     private String clientId;
     private String stockId;
     private int quantity;

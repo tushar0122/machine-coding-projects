@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-class Client{
+public class Client{
     private String id;
     private String name;
     private double capital;
