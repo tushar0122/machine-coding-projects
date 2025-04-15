@@ -1,6 +1,6 @@
-package org.example.stockBroker.services.taxCalculator;
+package org.example.archive.stockBroker.services.taxCalculator;
 
-import org.example.stockBroker.constants.TaxType;
+import org.example.archive.stockBroker.constants.TaxType;
 
 public class TaxCalculatorFactory {
     public static TaxCalculator getInstance(TaxType taxType){

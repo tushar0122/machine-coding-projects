@@ -1,4 +1,4 @@
-package org.example.stockBroker.constants;
+package org.example.archive.stockBroker.constants;
 
 public enum TaxType {
 

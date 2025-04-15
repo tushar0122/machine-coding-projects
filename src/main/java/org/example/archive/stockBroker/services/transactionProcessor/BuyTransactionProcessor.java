@@ -1,9 +1,9 @@
-package org.example.stockBroker.services.transactionProcessor;
+package org.example.archive.stockBroker.services.transactionProcessor;
 
-import org.example.stockBroker.entities.Client;
-import org.example.stockBroker.entities.Transaction;
-import org.example.stockBroker.services.ClientManager;
-import org.example.stockBroker.services.StockManager;
+import org.example.archive.stockBroker.entities.Client;
+import org.example.archive.stockBroker.entities.Transaction;
+import org.example.archive.stockBroker.services.ClientManager;
+import org.example.archive.stockBroker.services.StockManager;
 
 import java.time.LocalDateTime;
 import java.util.Stack;

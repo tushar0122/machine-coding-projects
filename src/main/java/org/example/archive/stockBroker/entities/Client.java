@@ -1,4 +1,4 @@
-package org.example.stockBroker.entities;
+package org.example.archive.stockBroker.entities;
 
 import java.util.HashMap;
 import java.util.Map;

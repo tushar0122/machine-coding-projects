@@ -1,6 +1,6 @@
-package org.example.stockBroker.services;
+package org.example.archive.stockBroker.services;
 
-import org.example.stockBroker.entities.Client;
+import org.example.archive.stockBroker.entities.Client;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

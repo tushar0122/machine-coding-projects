@@ -1,4 +1,4 @@
-package org.example.stockBroker.services.taxCalculator;
+package org.example.archive.stockBroker.services.taxCalculator;
 
 public interface TaxCalculator {
 

@@ -1,10 +1,9 @@
-package org.example.stockBroker;
+package org.example.archive.stockBroker;
 
-import org.example.stockBroker.constants.OrderType;
-import org.example.stockBroker.services.ClientManager;
-import org.example.stockBroker.services.TransactionManager;
-import org.example.stockBroker.services.transactionProcessor.TransactionProcessor;
-import org.example.stockBroker.services.StockManager;
+import org.example.archive.stockBroker.constants.OrderType;
+import org.example.archive.stockBroker.services.ClientManager;
+import org.example.archive.stockBroker.services.TransactionManager;
+import org.example.archive.stockBroker.services.StockManager;
 
 public class StockBrokerSystem {
 

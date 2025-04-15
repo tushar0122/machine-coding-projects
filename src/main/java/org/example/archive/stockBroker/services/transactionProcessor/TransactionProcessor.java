@@ -1,6 +1,4 @@
-package org.example.stockBroker.services.transactionProcessor;
-
-import org.example.stockBroker.constants.OrderType;
+package org.example.archive.stockBroker.services.transactionProcessor;
 
 public  interface TransactionProcessor {
 

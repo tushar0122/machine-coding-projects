@@ -1,6 +1,4 @@
-package org.example.stockBroker.services.taxCalculator;
-
-import org.example.stockBroker.services.TransactionManager;
+package org.example.archive.stockBroker.services.taxCalculator;
 
 public class InterDaySellTaxCalculator implements TaxCalculator {
 

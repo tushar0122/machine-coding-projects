@@ -1,4 +1,4 @@
-package org.example.stockBroker.entities;
+package org.example.archive.stockBroker.entities;
 
 public class Stock{
     private String id;

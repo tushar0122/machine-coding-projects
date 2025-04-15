@@ -1,6 +1,5 @@
 package org.example.cricketScoreSystem;
 
-import org.example.cricketScoreSystem.entities.Player;
 import org.example.cricketScoreSystem.entities.Team;
 import org.example.cricketScoreSystem.services.GameManager;
 

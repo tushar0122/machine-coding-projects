@@ -1,12 +1,12 @@
-package org.example.stockBroker.services.transactionProcessor;
+package org.example.archive.stockBroker.services.transactionProcessor;
 
-import org.example.stockBroker.constants.TaxType;
-import org.example.stockBroker.entities.Client;
-import org.example.stockBroker.entities.Transaction;
-import org.example.stockBroker.services.ClientManager;
-import org.example.stockBroker.services.StockManager;
-import org.example.stockBroker.services.taxCalculator.TaxCalculator;
-import org.example.stockBroker.services.taxCalculator.TaxCalculatorFactory;
+import org.example.archive.stockBroker.constants.TaxType;
+import org.example.archive.stockBroker.entities.Client;
+import org.example.archive.stockBroker.entities.Transaction;
+import org.example.archive.stockBroker.services.ClientManager;
+import org.example.archive.stockBroker.services.StockManager;
+import org.example.archive.stockBroker.services.taxCalculator.TaxCalculator;
+import org.example.archive.stockBroker.services.taxCalculator.TaxCalculatorFactory;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

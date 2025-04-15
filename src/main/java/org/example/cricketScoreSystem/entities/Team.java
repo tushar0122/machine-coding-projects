@@ -7,8 +7,8 @@ public class Team {
     String teamId;
     int numberOfPlayers;
     int numberOfOvers;
-    List<Player> playerListOrder = new ArrayList<Player>();
-    List<Over> overList;
+    List<org.example.cricketScoreSystem.entities.Player> playerListOrder = new ArrayList<org.example.cricketScoreSystem.entities.Player>();
+    List<org.example.cricketScoreSystem.entities.Over> overList;
     int strikerIndex = 0;
     int nonStrikerIndex = 1;
     int nextStrikerIndex = 2;
@@ -20,13 +20,13 @@ public class Team {
         this.numberOfPlayers = numberOfPlayers;
         this.numberOfOvers = numberOfOvers;
         for(var i: playerListOrder){
-            var k = new Player(i);
+            var k = new org.example.cricketScoreSystem.entities.Player(i);
             this.playerListOrder.add(k);
         }
     }
 
     public void addDelivery(String BallType){
-        Player striker = playerListOrder.get(strikerIndex);
+        org.example.cricketScoreSystem.entities.Player striker = playerListOrder.get(strikerIndex);
         switch (BallType) {
             case "Wd":
             case "N":
@@ -60,7 +60,7 @@ public class Team {
     }
 
     public void printScoreBoard(){
-        for(Player i: playerListOrder){
+        for(org.example.cricketScoreSystem.entities.Player i: playerListOrder){
             System.out.println(i.playerId+"     "+i.totalScore+"    "+i.numberOf4s+"    "+i.numberOf6s+"    "+i.numberOfBallsFaced);
         }
     }
