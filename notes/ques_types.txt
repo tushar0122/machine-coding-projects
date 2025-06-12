@@ -1,0 +1,9 @@
+While Loop
+    => No input 
+    => Random input based question
+
+Taking Live Input
+    => Kind of complete system for short time
+
+Real System
+    => We write few calls only to demonstrate

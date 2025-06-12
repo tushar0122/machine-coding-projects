@@ -1,0 +1,19 @@
+=> constants 
+    => enums 
+=> entities 
+=> services 
+=> Driver Class 
+
+Make all fields private wherever possible
+Make max classes Singleton whereever possible 
+No if else statement 
+    => If ever use factory pattern, strategy pattern
+    
+Interviewer 
+    => Says something correct with design principles you following 
+    => Single Responsibility Principle 
+
+
+Concurrent Modification 
+    => Use iterator 
+    => i.remove()
